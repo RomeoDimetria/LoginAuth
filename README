@@ -1,0 +1,53 @@
+# Vue.js Authentication with Laravel Backend
+
+Proyek ini adalah sistem autentikasi sederhana menggunakan Vue.js sebagai frontend dan Laravel sebagai backend. Aplikasi ini memiliki halaman login dan register yang terpisah, dengan Vue Router untuk navigasi antar halaman, serta Pinia untuk manajemen state.
+
+## Fitur
+
+- Halaman Login dan Register terpisah.
+- Manajemen state menggunakan Pinia.
+- Integrasi API backend Laravel dengan Axios.
+- Validasi formulir dan penanganan error dasar.
+
+## Persyaratan
+
+- **Node.js** dan **npm** terinstal
+- **Laravel** backend server
+- **Composer** terinstal untuk Laravel
+- Vue CLI (opsional)
+
+## Instalasi
+
+### 1. Clone Repository
+
+
+git clone https://github.com/your-repository.git
+cd your-repository
+
+2. Setup Frontend
+Masuk ke folder proyek frontend:
+
+
+
+cd frontend
+Instal dependensi:
+
+
+
+npm install
+Jalankan server pengembangan:
+
+
+npm run dev
+Aplikasi akan tersedia di http://localhost:5173.
+
+Usage
+Routes
+Login Page: http://localhost:5173/login
+Register Page: http://localhost:5173/register
+Backend API Endpoints
+POST /api/register: Register a new user
+POST /api/login: Authenticate a user
+POST /api/logout: Logout the authenticated user
+Configuration
+Ensure the API base URL in src/stores/auth.js matches your Laravel backend URL
